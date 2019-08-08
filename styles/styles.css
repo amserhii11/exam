@@ -32,7 +32,7 @@ img {
   display: grid;
   grid-template-columns: repeat(4, 220px);
   grid-template-rows: repeat(3,265px);
-  grid-gap: 20px;
+  grid-gap: 10px;
   justify-items: center;
 }
 
