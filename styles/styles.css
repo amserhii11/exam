@@ -10,9 +10,13 @@ body {
 }
 
 .person {
-  transition: 1s;
   height: 340px;
   position: relative;
+  padding: 12px 12px 0;
+}
+
+.photo {
+  margin: 1px;
 }
 
 img {
@@ -21,12 +25,14 @@ img {
   border-radius: 200px;
   display: flex;
   justify-content: center;
+  transition: 1s;
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 220px);
-  grid-template-rows: repeat(3,260px);
+  grid-template-rows: repeat(3,265px);
+  grid-gap: 20px;
   justify-items: center;
 }
 
@@ -41,6 +47,11 @@ img {
   font-family: Arial;
   font-size: 18px;
   line-height: 21px;
+  transition: all 1s;
+}
+
+.sport {
+  margin-top: 15px;
 }
 
 .person:hover {
@@ -61,7 +72,7 @@ img {
   color: #8B0000;
   position: absolute;
   top: 84px;
-  right: 12px;
+  right: 18px;
   border-radius: 30px;
 }
 
