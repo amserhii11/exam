@@ -25,7 +25,8 @@ img {
   border-radius: 200px;
   display: flex;
   justify-content: center;
-  transition: 1s;
+  transition-property: border-radius;
+  transition-duration: 1s;
 }
 
 .grid {
@@ -47,7 +48,6 @@ img {
   font-family: Arial;
   font-size: 18px;
   line-height: 21px;
-  transition: all 1s;
 }
 
 .sport {
