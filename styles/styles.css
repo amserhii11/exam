@@ -1,0 +1,95 @@
+body {
+  font-family: Arial;
+  font-size: 20px;
+}
+
+.name {
+  color: #2F4F4F;
+  display: flex;
+  justify-content: center;
+}
+
+.person {
+  transition: 1s;
+  height: 340px;
+  position: relative;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 220px);
+  grid-template-rows: repeat(3,260px);
+  justify-items: center;
+}
+
+.people {
+  display: flex;
+  justify-content: center;
+}
+
+.sport,
+.pay {
+  display: none;
+  font-family: Arial;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.person:hover {
+  background: #EEEEEE;
+  border-radius: 12px;
+  z-index: 1;
+}
+
+.rank {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial;
+  font-size: 16px;
+  width: 32px;
+  height: 32px;
+  background: #FFFFFF;
+  color: #8B0000;
+  position: absolute;
+  top: 84px;
+  right: 12px;
+  border-radius: 30px;
+}
+
+.person:hover .sport {
+  display: block;
+  font-size: 18px;
+  text-align: center;
+}
+
+.person:hover .pay {
+  display: block;
+  font-size: 18px;
+  text-align: center;
+}
+
+.person:hover img {
+  border-radius: 60px;
+  width: 240px;
+  height: 240px;
+}
+
+.person:hover .name{
+  font-size: 24px;
+}
+
+@media (max-width: 750px) {
+  .grid {
+  grid-template-columns: repeat(2, 220px);
+  grid-template-rows: repeat(5,260px);
+  }
+}
